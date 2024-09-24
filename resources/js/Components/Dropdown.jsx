@@ -1,6 +1,6 @@
-import { useState, createContext, useContext } from 'react';
-import { Link } from '@inertiajs/react';
 import { Transition } from '@headlessui/react';
+import { Link } from '@inertiajs/react';
+import { createContext, useContext, useState } from 'react';
 
 const DropDownContext = createContext();
 
@@ -74,7 +74,7 @@ const DropdownLink = ({ className = '', children, ...props }) => {
         <Link
             {...props}
             className={
-                'block w-full px-4 py-2 text-start text-sm leading-5 text-gray-700 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 transition duration-150 ease-in-out ' +
+                'block w-full px-4 py-2 text-start text-sm leading-5 text-gray-700 transition duration-150 ease-in-out hover:bg-gray-100 focus:bg-gray-100 focus:outline-none ' +
                 className
             }
         >
